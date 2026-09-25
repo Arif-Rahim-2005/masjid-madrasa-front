@@ -1,0 +1,37 @@
+{
+  "Khairat": {
+    "en": "Khairat",
+    "ar": "الخيرات",
+    "sw": "Khairat"
+  },
+  "nav_home": {
+    "en": "Home",
+    "sw": "Nyumbani",
+    "ar": "الرئيسية"
+  },
+  "nav_about": {
+    "en": "About The Institute",
+    "sw": "Kuhusu Madrasa",
+    "ar": "عن المدرسة"
+  },
+  "nav_programs": {
+    "en": "Programs",
+    "sw": "Programu",
+    "ar": "البرامج"
+  },
+  "nav_contact": {
+    "en": "Contact",
+    "sw": "Mwasiliano",
+    "ar": "اتصل بنا"
+  },
+  "nav_admissions": {
+    "en": "Admissions",
+    "sw": "Udahili",
+    "ar": "القبول"
+  },
+  "nav_login": {
+    "en": "Login",
+    "sw": "Ingia",
+    "ar": "تسجيل الدخول"
+  }
+}

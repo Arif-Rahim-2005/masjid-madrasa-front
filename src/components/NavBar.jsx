@@ -37,12 +37,12 @@ const NavBar = () => {
               <div>
                 <Link className="navbar-brand " to="/programs">
                   {t("nav_programs", lang)}
-                </Link>
+                </Link></div>
+              <div>
                 <Link className="navbar-brand" to="/about">
                   {t("nav_about", lang)}
                 </Link>
               </div>
-              <div></div>
               <div>
                 <Link className="navbar-brand " to="/contact">
                   {t("nav_contact", lang)}

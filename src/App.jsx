@@ -1,18 +1,46 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
+import LanguageProvider from "./components/LanguageContext";
+
+import Home from "./pages/Home";
+import Programs from "./pages/Programs";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Admissions from "./pages/Admissions";
+import SecurityPage from "./pages/Security";
+
+const Layout = () => {
+  const location = useLocation();
+
+  const isAdminPage = location.pathname === "/admin";
+
+  return (
+    <>
+      {!isAdminPage && <NavBar />}
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/programs" element={<Programs />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/admissions" element={<Admissions />} />
+        <Route path="/admin" element={<SecurityPage />} />
+      </Routes>
+
+      {!isAdminPage && <Footer />}
+    </>
+  );
+};
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<h1>Home</h1>} />
-        <Route path="/programs" element={<h1>Programs</h1>} />
-        <Route path="/about" element={<h1>About</h1>} />
-        <Route path="/contact" element={<h1>Contact</h1>} />
-        <Route path="/admissions" element={<h1>Admissions</h1>} />
-        <Route path="/login" element={<h1>Login</h1>} />
-        <Route path="/signup" element={<h1>Signup</h1>} />
-      </Routes>
-    </BrowserRouter>
+    <LanguageProvider>
+      <BrowserRouter>
+        <Layout />
+      </BrowserRouter>
+    </LanguageProvider>
   );
 }
 
