@@ -87,14 +87,6 @@ const SecurityPage = () => {
             >
               {t("nav_about", lang)}
             </Link>
-
-            <Link
-              className="transition-colors hover:text-green-600"
-              to="/contact"
-            >
-              {t("nav_contact", lang)}
-            </Link>
-
             <Link
               className="transition-colors hover:text-green-600"
               to="/admissions"
@@ -263,14 +255,6 @@ const SecurityPage = () => {
                 onClick={() => setOpen(false)}
               >
                 {t("nav_admissions", lang)}
-              </Link>
-
-              <Link
-                className="block px-6 py-3 text-green-800 hover:bg-green-50"
-                to="/contact"
-                onClick={() => setOpen(false)}
-              >
-                {t("nav_contact", lang)}
               </Link>
             </div>
           )}

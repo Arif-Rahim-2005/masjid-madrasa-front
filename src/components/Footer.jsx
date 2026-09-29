@@ -3,6 +3,7 @@ import React from "react";
 import { useContext } from "react";
 import { LanguageContext } from "./LanguageContext";
 import text from "../text";
+import { FaPhone, FaWhatsapp, FaTelegram, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   const { lang } = useContext(LanguageContext);
@@ -14,13 +15,8 @@ const Footer = () => {
     <footer className="bg-white text-green-800 py-10 border-t border-green-800 ">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
         <div>
-          <h4 className="text-xl font-semibold mb-3">
-            {" "}
-            {t("Khairat")}
-          </h4>
-          <p className="text-sm text-gray-400">
-            {t("hero_tagline")}
-          </p>
+          <h4 className="text-xl font-semibold mb-3"> {t("Khairat")}</h4>
+          <p className="text-sm text-gray-400">{t("hero_tagline")}</p>
         </div>
         <div>
           <h4 className="text-xl font-semibold mb-3">{t("Quick links")}</h4>
@@ -35,21 +31,73 @@ const Footer = () => {
                 {t("nav_about")}
               </Link>
             </li>
+            <li>
+              <Link to="/admissions" className="hover:underline">
+                {t("nav_admissions")}
+              </Link>
+            </li>
           </ul>
         </div>
         <div>
-          <h4 className="text-xl font-semibold mb-3">{t("nav_contact")}</h4>
-          <button
-            className="text-sm hover:underline"
-            onClick={() => {
-              window.open(
-                "https://www.google.com/maps/place/Madrasatul+Khairat+Al+-+Islamiyyah/@-4.0379336,39.6640323,17z/data=!4m14!1m7!3m6!1s0x184012bafea8e4f5:0xfff876d7199e340f!2sMadrasatul+Khairat+Al+-+Islamiyyah!8m2!3d-4.0379229!4d39.6644722!16s%2Fg%2F11w_rsp6_c!3m5!1s0x184012bafea8e4f5:0xfff876d7199e340f!8m2!3d-4.0379229!4d39.6644722!16s%2Fg%2F11w_rsp6_c!5m1!1e4?entry=ttu&g_ep=EgoyMDI2MDQyNy4wIKXMDSoASAFQAw%3D%3D",
-              );
-            }}
-          >{t("Khairat")}, Mombasa (view location)
-          </button>
-          <p className="text-sm">📞 0722867998</p>
-          <p className="text-sm">📞 0706900433</p>
+          <div className="space-y-3">
+            <h4 className="text-xl font-semibold mb-3">{t("nav_contact")}</h4>
+
+            <a
+              href="tel:+254722867998"
+              className="flex items-center gap-3 text-sm hover:underline"
+            >
+              <FaPhone />
+              0722867998
+            </a>
+
+            <a
+              href="tel:+254706900433"
+              className="flex items-center gap-3 text-sm hover:underline"
+            >
+              <FaPhone />
+              0706900433
+            </a>
+
+            <a
+              href="https://chat.whatsapp.com/KyVukfsTjNn1VrsN68pJLp"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 text-sm hover:underline"
+            >
+              <FaWhatsapp />
+              WhatsApp
+            </a>
+
+            <a
+              href="https://t.me/halaqaat_bin_isa"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 text-sm hover:underline"
+            >
+              <FaTelegram />
+              Telegram
+            </a>
+
+            <a
+              href="https://youtube.com/@Qanat_Bin_Isa"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 text-sm hover:underline"
+            >
+              <FaYoutube />
+              YouTube
+            </a>
+            <button
+              className="flex items-center gap-3 text-sm hover:underline"
+              onClick={() => {
+                window.open(
+                  "https://www.google.com/maps/place/Madrasatul+Khairat+Al+-+Islamiyyah/@-4.0379336,39.6640323,17z/data=!4m14!1m7!3m6!1s0x184012bafea8e4f5:0xfff876d7199e340f!2sMadrasatul+Khairat+Al+-+Islamiyyah!8m2!3d-4.0379229!4d39.6644722!16s%2Fg%2F11w_rsp6_c!3m5!1s0x184012bafea8e4f5:0xfff876d7199e340f!8m2!3d-4.0379229!4d39.6644722!16s%2Fg%2F11w_rsp6_c!5m1!1e4?entry=ttu&g_ep=EgoyMDI2MDQyNy4wIKXMDSoASAFQAw%3D%3D",
+                );
+              }}
+            >
+              📍{t("Khairat")}, Mombasa (view location)
+            </button>
+          </div>
         </div>
       </div>
       <p className="text-center text-xs text-gray-500 mt-6">

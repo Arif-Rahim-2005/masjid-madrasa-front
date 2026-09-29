@@ -20,18 +20,262 @@
     "ar": "البرامج"
   },
   "nav_contact": {
-    "en": "Contact",
+    "en": "Contact and Connect",
     "sw": "Mwasiliano",
     "ar": "اتصل بنا"
   },
   "nav_admissions": {
-    "en": "Admissions",
-    "sw": "Udahili",
-    "ar": "القبول"
+    "en": "Admission into the Madrasa",
+    "sw": "Udahili wa Madrasa",
+    "ar": "القبول في المدرسة"
   },
   "nav_login": {
     "en": "Login",
     "sw": "Ingia",
     "ar": "تسجيل الدخول"
+  },
+
+  "hero_welcome": {
+    "en": "Welcome to Masjid and Madrasatul Kheirat Al-Islamiyyah",
+    "sw": "Karibuni katika Masjid na Madrasatul Kheirat Al-Islamiyyah",
+    "ar": "أهلاً وسهلاً بكم في مسجد ومدرسة الخيرات الإسلامية"
+  },
+  "hero_tagline": {
+    "en": "Nurturing Faith and Knowledge",
+    "sw": "Kukuza Imani na Elimu",
+    "ar": "تنمية الإيمان والعلم"
+  },
+
+  "slide2Title": {
+    "en": "Based on the Qur’an and Sunnah",
+    "sw": "Kwa mujibu wa Qur’an na Sunnah",
+    "ar": "تعليم قائم على القرآن والسنة"
+  },
+  "slide2Subtitle": {
+    "en": "Upon the methodology of the righteous predecessors",
+    "sw": "Kwa kufuata mwenendo wa wema waliotangulia (Salaf Sāliḥ)",
+    "ar": "على منهج السلف الصالح"
+  },
+  "slide3Title": {
+    "en": "Preparing a generation grounded in knowledge and character",
+    "sw": "Kuandaa kizazi chenye elimu na maadili mema",
+    "ar": "إعداد جيل راسخ في العلم والأخلاق"
+  },
+  "slide3Subtitle": {
+    "en": "Serving the Ummah with sincerity and excellence",
+    "sw": "Kutumikia Umma kwa uaminifu na ubora",
+    "ar": "يخدم الأمة بإخلاص وإتقان"
+  },
+
+  "sectionTitle": {
+    "en": "Our Programs",
+    "sw": "Programu Zetu",
+    "ar": "برامجنا"
+  },
+  "Quick links": {
+    "en": "Quick links",
+    "sw": "Viungo vya haraka",
+    "ar": "روابط سريعة"
+  },
+  "introTitle": {
+    "en": "About Masjid and Madrasatul Kheirat Al-Islamiyyah",
+    "sw": "Kuhusu Masjid na Madrasatul Kheirat Al-Islamiyyah",
+    "ar": "عن مسجد ومدرسة الخيرات الإسلامية"
+  },
+  "introText": {
+    "en": "Madrasatul Kheirat Al-Islamiyyah is dedicated to nurturing students with authentic Islamic knowledge, strong faith, good character, and a sound understanding of the Qur’an and Sunnah according to the way of the Salaf Salih.",
+    "sw": "Madrasatul Kheirat Al-Islamiyyah imejitolea kuwalea wanafunzi kwa elimu sahihi ya Kiislamu, imani thabiti, tabia njema, na ufahamu mzuri wa Qur’an na Sunnah kwa kufuata njia ya Salaf Saleh.",
+    "ar": "مدرسة الخيرات الإسلامية تهتم بتربية الطلاب على العلم الشرعي الصحيح، والإيمان الراسخ، والأخلاق الحسنة، والفهم السليم للقرآن والسنة على منهج السلف الصالح."
+  },
+  "introButton": {
+    "en": "Learn More About Us",
+    "sw": "Jifunze Zaidi Kuhusu Sisi",
+    "ar": "تعرّف أكثر علينا"
+  },
+  "viewPrograms": {
+    "en": "View Our Programs",
+    "sw": "Tazama Programu Zetu",
+    "ar": "تعرّف على برامجنا"
+  },
+  "masjidProgramsTitle": {
+    "en": "Masjid Programs",
+    "sw": "Programu za Msikiti",
+    "ar": "برامج المسجد"
+  },
+
+  "madrasaProgramsTitle": {
+    "en": "Madrasa Programs",
+    "sw": "Programu za Madrasa",
+    "ar": "برامج المدرسة"
+  },
+  "aboutHeroTitle": {
+    "en": "About Masjid and Madrasatul Kheirat Al-Islamiyyah",
+    "sw": "Kuhusu Masjid na Madrasatul Kheirat Al-Islamiyyah",
+    "ar": "عن مسجد ومدرسة الخيرات الإسلامية"
+  },
+  "aboutHeroSubtitle": {
+    "en": "Nurturing faith, knowledge, and character",
+    "sw": "Kukuza imani, elimu na tabia njema",
+    "ar": "تنمية الإيمان والعلم والأخلاق"
+  },
+  "aboutWhoWeAreTitle": {
+    "en": "Who We Are",
+    "sw": "Sisi Ni Nani",
+    "ar": "من نحن"
+  },
+  "aboutWhoWeAreText": {
+    "en": "Masjid and Madrasatul Kheirat Al-Islamiyyah is dedicated to nurturing students and serving the community through sound Islamic education, strong faith, good character, and a proper understanding of the Qur’an and Sunnah.",
+    "sw": "Masjid na Madrasatul Kheirat Al-Islamiyyah imejitolea kuwalea wanafunzi na kuhudumia jamii kupitia elimu sahihi ya Kiislamu, imani thabiti, tabia njema, na ufahamu mzuri wa Qur’an na Sunnah.",
+    "ar": "مسجد ومدرسة الخيرات الإسلامية تهتم بتربية الطلاب وخدمة المجتمع من خلال التعليم الإسلامي الصحيح، والإيمان الراسخ، والأخلاق الحسنة، والفهم السليم للقرآن والسنة."
+  },
+  "aboutMissionTitle": {
+    "en": "Our Mission",
+    "sw": "Dhamira Yetu",
+    "ar": "رسالتنا"
+  },
+  "aboutMissionText": {
+    "en": "To provide beneficial Islamic education and nurture a generation grounded in faith, knowledge, good character, and service to the community.",
+    "sw": "Kutoa elimu yenye manufaa ya Kiislamu na kulea kizazi chenye misingi ya imani, elimu, tabia njema na kuhudumia jamii.",
+    "ar": "تقديم التعليم الإسلامي النافع وتربية جيل راسخ في الإيمان والعلم والأخلاق الحسنة وخدمة المجتمع."
+  },
+  "aboutApproachTitle": {
+    "en": "Our Approach",
+    "sw": "Mtazamo Wetu",
+    "ar": "منهجنا"
+  },
+  "aboutQuranTitle": {
+    "en": "Qur’an & Sunnah",
+    "sw": "Qur’an na Sunnah",
+    "ar": "القرآن والسنة"
+  },
+  "aboutQuranText": {
+    "en": "We emphasize learning from the Qur’an and authentic Sunnah as the foundation of Islamic knowledge and practice.",
+    "sw": "Tunasisitiza kujifunza Qur’an na Sunnah sahihi kama msingi wa elimu na utekelezaji wa Uislamu.",
+    "ar": "نؤكد على التعلم من القرآن والسنة الصحيحة باعتبارهما أساس العلم والعمل في الإسلام."
+  },
+  "aboutKnowledgeTitle": {
+    "en": "Beneficial Knowledge",
+    "sw": "Elimu yenye Manufaa",
+    "ar": "العلم النافع"
+  },
+  "aboutKnowledgeText": {
+    "en": "We seek to develop students who value knowledge, understand their responsibilities, and continue learning throughout their lives.",
+    "sw": "Tunalenga kuwajenga wanafunzi wanaothamini elimu, wanaofahamu majukumu yao, na wanaoendelea kujifunza katika maisha yao.",
+    "ar": "نسعى إلى إعداد طلاب يقدرون العلم ويدركون مسؤولياتهم ويواصلون طلب العلم في حياتهم."
+  },
+  "aboutCharacterTitle": {
+    "en": "Good Character",
+    "sw": "Tabia Njema",
+    "ar": "الأخلاق الحسنة"
+  },
+  "aboutCharacterText": {
+    "en": "We encourage good manners, discipline, sincerity, respect, and responsibility in our students and community.",
+    "sw": "Tunawahimiza wanafunzi na jamii kuwa na adabu njema, nidhamu, ikhlasi, heshima na uwajibikaji.",
+    "ar": "نشجع الطلاب والمجتمع على حسن الأخلاق والانضباط والإخلاص والاحترام وتحمل المسؤولية."
+  },
+  "aboutMasjidTitle": {
+    "en": "The Masjid",
+    "sw": "Msikiti",
+    "ar": "المسجد"
+  },
+  "aboutMasjidText": {
+    "en": "The masjid serves as a place of worship, community gathering, learning, and activities that benefit the Muslim community.",
+    "sw": "Msikiti ni mahali pa ibada, mikusanyiko ya jamii, kujifunza, na shughuli zenye manufaa kwa jamii ya Kiislamu.",
+    "ar": "المسجد مكان للعبادة واجتماع المجتمع والتعلم والأنشطة التي تعود بالنفع على المجتمع المسلم."
+  },
+  "aboutMadrasaTitle": {
+    "en": "The Madrasa",
+    "sw": "Madrasa",
+    "ar": "المدرسة"
+  },
+  "aboutMadrasaText": {
+    "en": "The madrasa provides structured Islamic education designed to nurture students with knowledge, faith, discipline, and good character.",
+    "sw": "Madrasa hutoa elimu ya Kiislamu iliyoandaliwa kwa lengo la kuwalea wanafunzi katika elimu, imani, nidhamu na tabia njema.",
+    "ar": "تقدم المدرسة تعليماً إسلامياً منظماً يهدف إلى تربية الطلاب على العلم والإيمان والانضباط والأخلاق الحسنة."
+  },
+  "aboutClosingTitle": {
+    "en": "Join Us in Seeking Beneficial Knowledge",
+    "sw": "Jiunge Nasi Katika Kutafuta Elimu yenye Manufaa",
+    "ar": "انضم إلينا في طلب العلم النافع"
+  },
+  "aboutClosingText": {
+    "en": "Explore our programs and learn more about opportunities to study at Masjid and Madrasatul Kheirat Al-Islamiyyah.",
+    "sw": "Tazama programu zetu na ujifunze zaidi kuhusu fursa za kusoma katika Masjid na Madrasatul Kheirat Al-Islamiyyah.",
+    "ar": "تعرّف على برامجنا وتعلم المزيد عن فرص الدراسة في مسجد ومدرسة الخيرات الإسلامية."
+  },
+  "admissionsHeroTitle": {
+    "en": "Admissions into the Madrasa",
+    "sw": "Udahili wa Madrasa",
+    "ar": "القبول في المدرسة"
+  },
+  "admissionsHeroSubtitle": {
+    "en": "Learn about joining Masjid and Madrasatul Kheirat Al-Islamiyyah",
+    "sw": "Jifunze kuhusu kujiunga na Masjid na Madrasatul Kheirat Al-Islamiyyah",
+    "ar": "تعرّف على كيفية الالتحاق بمسجد ومدرسة الخيرات الإسلامية"
+  },
+  "admissionsInfoTitle": {
+    "en": "Admission Information",
+    "sw": "Maelezo ya Udahili",
+    "ar": "معلومات القبول"
+  },
+  "admissionsInfoText": {
+    "en": "We welcome students who are committed to seeking beneficial knowledge and developing strong faith, good character, and discipline. Please review the admission requirements and available documents before applying.",
+    "sw": "Tunawakaribisha wanafunzi waliojitolea kutafuta elimu yenye manufaa na kujenga imani thabiti, tabia njema na nidhamu. Tafadhali soma masharti ya udahili na nyaraka zinazopatikana kabla ya kuomba.",
+    "ar": "نرحب بالطلاب الراغبين في طلب العلم النافع وبناء الإيمان الراسخ والأخلاق الحسنة والانضباط. يرجى مراجعة شروط القبول والوثائق المتاحة قبل التقديم."
+  },
+  "admissionsRequirementsTitle": {
+    "en": "Admission Requirements",
+    "sw": "Masharti ya Udahili",
+    "ar": "شروط القبول"
+  },
+  "admissionRequirement1": {
+    "en": "Commitment to learning and attending classes regularly.",
+    "sw": "Kujitolea katika kujifunza na kuhudhuria masomo mara kwa mara.",
+    "ar": "الالتزام بالتعلم وحضور الدروس بانتظام."
+  },
+  "admissionRequirement2": {
+    "en": "Respect for Islamic manners, teachers, fellow students, and the community.",
+    "sw": "Kuheshimu adabu za Kiislamu, walimu, wanafunzi wenzako na jamii.",
+    "ar": "احترام الآداب الإسلامية والمعلمين والطلاب والمجتمع."
+  },
+  "admissionRequirement3": {
+    "en": "Submission of the required admission information and documents.",
+    "sw": "Kuwasilisha taarifa na nyaraka zinazohitajika kwa udahili.",
+    "ar": "تقديم معلومات ووثائق القبول المطلوبة."
+  },
+  "admissionRequirement4": {
+    "en": "Willingness to follow the rules and guidelines of the institution.",
+    "sw": "Kuwa tayari kufuata kanuni na miongozo ya taasisi.",
+    "ar": "الاستعداد للالتزام بأنظمة وتعليمات المؤسسة."
+  },
+  "admissionsHowToApplyTitle": {
+    "en": "How to Apply",
+    "sw": "Jinsi ya Kuomba",
+    "ar": "كيفية التقديم"
+  },
+  "admissionsHowToApplyText": {
+    "en": "Review the admission information and required documents, complete the relevant admission form, and follow the instructions provided by the institution.",
+    "sw": "Soma maelezo ya udahili na nyaraka zinazohitajika, jaza fomu husika ya udahili, na ufuate maelekezo yaliyotolewa na taasisi.",
+    "ar": "راجع معلومات القبول والوثائق المطلوبة، ثم أكمل استمارة القبول المناسبة واتبع التعليمات التي تقدمها المؤسسة."
+  },
+  "admissionsDocumentsTitle": {
+    "en": "Required Documents",
+    "sw": "Nyaraka Zinazohitajika",
+    "ar": "الوثائق المطلوبة"
+  },
+  "admissionsDocumentsText": {
+    "en": "Download or view the documents provided by the institution for admission.",
+    "sw": "Pakua au tazama nyaraka zinazotolewa na taasisi kwa ajili ya udahili.",
+    "ar": "يمكنك تحميل أو عرض الوثائق التي توفرها المؤسسة للقبول."
+  },
+  "admissionsNoDocuments": {
+    "en": "No admission documents are currently available.",
+    "sw": "Hakuna nyaraka za udahili zinazopatikana kwa sasa.",
+    "ar": "لا توجد وثائق قبول متاحة حالياً."
+  },
+  "admissionsViewDocument": {
+    "en": "View Document",
+    "sw": "Tazama Nyaraka",
+    "ar": "عرض الوثيقة"
   }
 }
