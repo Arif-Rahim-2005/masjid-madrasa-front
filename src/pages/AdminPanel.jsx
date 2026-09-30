@@ -2,6 +2,8 @@ import ImageManager from "../components/ImageManager";
 import DocumentManager from "../components/DocumentManager";
 import MasjidProgramManager from "../components/MasjidProgramManager";
 import MadrasaCategoryManager from "../components/MadrasaCategoryManager";
+import MadrasaProgramManager from "../components/MadrasaProgramManager";
+import AnnouncementManager from "../components/AnnouncementManager";
 
 const AdminPanel = () => {
   return (
@@ -15,6 +17,8 @@ const AdminPanel = () => {
         <DocumentManager />
         <MasjidProgramManager />
         <MadrasaCategoryManager />
+        <MadrasaProgramManager />
+        <AnnouncementManager />
       </div>
     </main>
   );

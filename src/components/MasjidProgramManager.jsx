@@ -134,47 +134,17 @@ const MasjidProgramManager = () => {
 
         throw new Error(errorData.message || "Failed to add Masjid program");
       }
+      window.location.reload();
 
       const data = await response.json();
 
       console.log("Program added:", data);
-      if (editingProgramId) {
-        setMasjidPrograms((currentPrograms) =>
-          currentPrograms.map((program) =>
-            program.id === editingProgramId
-              ? {
-                  ...program,
-                  image:
-                    images.find((image) => image.id === Number(programImage)) ||
-                    program.image,
-                  translations: {
-                    en: {
-                      program_name: programNameEn,
-                      program_schedule: programScheduleEn,
-                      book: bookEn,
-                    },
-                    sw: {
-                      program_name: programNameSw,
-                      program_schedule: programScheduleSw,
-                      book: bookSw,
-                    },
-                    ar: {
-                      program_name: programNameAr,
-                      program_schedule: programScheduleAr,
-                      book: bookAr,
-                    },
-                  },
-                }
-              : program,
-          ),
-        );
-      }
+  
       alert(
         editingProgramId
           ? "Masjid program updated successfully."
           : "Masjid program added successfully.",
       );
-      resetProgramForm();
     } catch (error) {
       console.error("Error adding Masjid program:", error);
     }
@@ -354,7 +324,6 @@ const MasjidProgramManager = () => {
         {/* Submit */}
         <button
           type="submit"
-          onClick={resetProgramForm}
           className="mt-8 bg-green-800 text-white px-6 py-3 rounded-lg hover:bg-green-700"
         >
           {editingProgramId ? "Update Masjid Program" : "Add Masjid Program"}
@@ -364,7 +333,7 @@ const MasjidProgramManager = () => {
         <button
           type="button"
           onClick={() => {
-           resetProgramForm();
+            resetProgramForm();
           }}
           className="ml-3 bg-gray-500 text-white px-6 py-3 rounded-lg hover:bg-gray-600"
         >
