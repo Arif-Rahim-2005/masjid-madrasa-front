@@ -65,7 +65,7 @@ const Home = () => {
           >
             <SwiperSlide>
               <img
-                src="/pictures/slides/slide 1.png"
+                src="/slides/slide 1.png"
                 alt="Slider 1"
                 style={{ width: "100%", height: "100%" }}
                 className="absolute inset-0 w-full h-full object-cover"
@@ -84,7 +84,7 @@ const Home = () => {
             </SwiperSlide>
             <SwiperSlide>
               <img
-                src="/pictures/slides/slide 2.png"
+                src="/slides/slide 2.png"
                 alt="Slider 2"
                 style={{ width: "100%", height: "100%" }}
                 className="absolute inset-0 w-full h-full object-cover"
@@ -103,7 +103,7 @@ const Home = () => {
             </SwiperSlide>
             <SwiperSlide>
               <img
-                src="/pictures/slides/slide 3.png"
+                src="/slides/slide 3.png"
                 alt="Slider 3"
                 style={{ width: "100%", height: "100%" }}
                 className="absolute inset-0 w-full h-full object-cover"
