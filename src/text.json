@@ -78,13 +78,13 @@
     "ar": "روابط سريعة"
   },
   "introTitle": {
-    "en": "About Madrasatul Khairat Al-Islamiyyah",
-    "sw": "Kuhusu Madrasatul Khairat Al-Islamiyyah",
+    "en": "About Khairat Al-Islamiyyah",
+    "sw": "Kuhusu Khairat Al-Islamiyyah",
     "ar": "عن مدرسة الخيرات الإسلامية"
   },
   "introText": {
-    "en": "Madrasatul Khairat Al-Islamiyyah is dedicated to nurturing students with authentic Islamic knowledge, strong faith, good character, and a sound understanding of the Qur’an and Sunnah according to the way of the Salaf Salih.",
-    "sw": "Madrasatul Khairat Al-Islamiyyah imejitolea kuwalea wanafunzi kwa elimu sahihi ya Kiislamu, imani thabiti, tabia njema, na ufahamu mzuri wa Qur’an na Sunnah kwa kufuata njia ya Salaf Saleh.",
+    "en": "Khairat Al-Islamiyyah is dedicated to nurturing students with authentic Islamic knowledge, strong faith, good character, and a sound understanding of the Qur’an and Sunnah according to the way of the Salaf Salih.",
+    "sw": "Khairat Al-Islamiyyah imejitolea kuwalea wanafunzi kwa elimu sahihi ya Kiislamu, imani thabiti, tabia njema, na ufahamu mzuri wa Qur’an na Sunnah kwa kufuata njia ya Salaf Saleh.",
     "ar": "مدرسة الخيرات الإسلامية تهتم بتربية الطلاب على العلم الشرعي الصحيح، والإيمان الراسخ، والأخلاق الحسنة، والفهم السليم للقرآن والسنة على منهج السلف الصالح."
   },
   "introButton": {
@@ -109,8 +109,8 @@
     "ar": "برامج المدرسة"
   },
   "aboutHeroTitle": {
-    "en": "About Madrasatul Khairat Al-Islamiyyah",
-    "sw": "Kuhusu Madrasatul Khairat Al-Islamiyyah",
+    "en": "About Khairat Al-Islamiyyah",
+    "sw": "Kuhusu Khairat Al-Islamiyyah",
     "ar": "عن مدرسة الخيرات الإسلامية"
   },
   "aboutHeroSubtitle": {
@@ -124,8 +124,8 @@
     "ar": "من نحن"
   },
   "aboutWhoWeAreText": {
-    "en": "Madrasatul Khairat Al-Islamiyyah is dedicated to nurturing students and serving the community through sound Islamic education, strong faith, good character, and a proper understanding of the Qur’an and Sunnah.",
-    "sw": "Madrasatul Khairat Al-Islamiyyah imejitolea kuwalea wanafunzi na kuhudumia jamii kupitia elimu sahihi ya Kiislamu, imani thabiti, tabia njema, na ufahamu mzuri wa Qur’an na Sunnah.",
+    "en": "Khairat Al-Islamiyyah is dedicated to nurturing students and serving the community through sound Islamic education, strong faith, good character, and a proper understanding of the Qur’an and Sunnah.",
+    "sw": "Khairat Al-Islamiyyah imejitolea kuwalea wanafunzi na kuhudumia jamii kupitia elimu sahihi ya Kiislamu, imani thabiti, tabia njema, na ufahamu mzuri wa Qur’an na Sunnah.",
     "ar": "مدرسة الخيرات الإسلامية تهتم بتربية الطلاب وخدمة المجتمع من خلال التعليم الإسلامي الصحيح، والإيمان الراسخ، والأخلاق الحسنة، والفهم السليم للقرآن والسنة."
   },
   "aboutMissionTitle": {
@@ -209,8 +209,8 @@
     "ar": "القبول في المدرسة"
   },
   "admissionsHeroSubtitle": {
-    "en": "Learn about joining Masjid and Madrasatul Kheirat Al-Islamiyyah",
-    "sw": "Jifunze kuhusu kujiunga na Masjid na Madrasatul Kheirat Al-Islamiyyah",
+    "en": "Learn about joining Madrasatul Khairat Al-Islamiyyah",
+    "sw": "Jifunze kuhusu kujiunga na Madrasatul Khairat Al-Islamiyyah",
     "ar": "تعرّف على كيفية الالتحاق بمسجد ومدرسة الخيرات الإسلامية"
   },
   "admissionsInfoTitle": {
