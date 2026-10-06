@@ -37,7 +37,7 @@ const Admissions = () => {
     <main className="text-green-800">
       <section className="relative h-96 flex items-center justify-center">
         <img
-          src="/pictures/slides/slide 3.png"
+          src="/slides/slide 3.png"
           alt="Admissions"
           className="absolute inset-0 w-full h-full object-cover"
         />
