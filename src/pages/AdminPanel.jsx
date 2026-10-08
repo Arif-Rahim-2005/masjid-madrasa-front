@@ -4,6 +4,9 @@ import MasjidProgramManager from "../components/MasjidProgramManager";
 import MadrasaCategoryManager from "../components/MadrasaCategoryManager";
 import MadrasaProgramManager from "../components/MadrasaProgramManager";
 import AnnouncementManager from "../components/AnnouncementManager";
+import AudioCategoryManager from "../components/AudioCategoryManager";
+import AudioSeriesManager from "../components/AudioSeriesManager";
+import AudioRecordingManager from "../components/AudioRecordingManager";
 
 const AdminPanel = () => {
   return (
@@ -19,6 +22,9 @@ const AdminPanel = () => {
         <MadrasaCategoryManager />
         <MadrasaProgramManager />
         <AnnouncementManager />
+        <AudioCategoryManager />
+        <AudioSeriesManager />
+        <AudioRecordingManager />
       </div>
     </main>
   );

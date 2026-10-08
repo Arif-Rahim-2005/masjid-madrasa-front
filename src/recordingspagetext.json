@@ -1,0 +1,85 @@
+{
+  "audio_library": {
+    "en": "Audio Library",
+    "sw": "Maktaba ya Sauti",
+    "ar": "مكتبة الصوتيات"
+  },
+
+  "audio_library_description": {
+    "en": "Listen to our recorded lessons, khutbas, dawras and other audio.",
+    "sw": "Sikiliza darsa, khutba, dawra na sauti nyingine zilizorekodiwa.",
+    "ar": "استمع إلى الدروس والخطب والدورات والتسجيلات الصوتية الأخرى."
+  },
+
+  "browse_recordings": {
+    "en": "Browse recordings",
+    "sw": "Tazama rekodi",
+    "ar": "تصفح التسجيلات"
+  },
+
+  "back_to_categories": {
+    "en": "← Back to categories",
+    "sw": "← Rudi kwenye kategoria",
+    "ar": "← العودة إلى التصنيفات"
+  },
+
+  "back": {
+    "en": "← Back",
+    "sw": "← Rudi",
+    "ar": "←العودة"
+  },
+
+  "loading_audio_library": {
+    "en": "Loading audio library...",
+    "sw": "Inapakia maktaba ya sauti...",
+    "ar": "جارٍ تحميل مكتبة الصوتيات..."
+  },
+
+  "loading": {
+    "en": "Loading...",
+    "sw": "Inapakia...",
+    "ar": "جارٍ التحميل..."
+  },
+
+  "loading_recordings": {
+    "en": "Loading recordings...",
+    "sw": "Inapakia rekodi...",
+    "ar": "جارٍ تحميل التسجيلات..."
+  },
+
+  "no_audio_categories": {
+    "en": "No audio categories available.",
+    "sw": "Hakuna kategoria za sauti zinazopatikana.",
+    "ar": "لا توجد تصنيفات صوتية متاحة."
+  },
+
+  "no_series": {
+    "en": "No series available.",
+    "sw": "Hakuna mfululizo unaopatikana.",
+    "ar": "لا توجد سلاسل متاحة."
+  },
+
+  "no_recordings": {
+    "en": "No recordings available.",
+    "sw": "Hakuna rekodi zinazopatikana.",
+    "ar": "لا توجد تسجيلات متاحة."
+  },
+
+  "view": {
+    "en": "View",
+    "sw": "Tazama",
+    "ar": "عرض"
+  },
+
+  "hide": {
+    "en": "Hide",
+    "sw": "Ficha",
+    "ar": "إخفاء"
+  },
+
+  "browser_audio_unsupported": {
+    "en": "Your browser does not support audio playback.",
+    "sw": "Kivinjari chako hakitumii uchezaji wa sauti.",
+    "ar": "متصفحك لا يدعم تشغيل الصوت."
+  }
+}

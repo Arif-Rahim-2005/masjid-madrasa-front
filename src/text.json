@@ -29,6 +29,11 @@
     "sw": "Udahili wa Madrasa",
     "ar": "القبول في المدرسة"
   },
+  "nav_audio_recordings": {
+    "en": "Audio Recordings",
+    "sw": "Rekodi za Sauti",
+    "ar": "التسجيلات الصوتية"
+  },
   "nav_login": {
     "en": "Login",
     "sw": "Ingia",

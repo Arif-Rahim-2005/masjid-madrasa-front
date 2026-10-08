@@ -37,7 +37,13 @@ const NavBar = () => {
               <div>
                 <Link className="navbar-brand " to="/programs">
                   {t("nav_programs", lang)}
-                </Link></div>
+                </Link>
+              </div>
+              <div>
+                <Link className="navbar-brand " to="/audio-recordings">
+                  {t("nav_audio_recordings", lang)}
+                </Link>
+              </div>
               <div>
                 <Link className="navbar-brand" to="/about">
                   {t("nav_about", lang)}
@@ -129,7 +135,13 @@ const NavBar = () => {
               >
                 {t("nav_admissions", lang)}
               </Link>
-
+              <Link
+                className="block px-6 py-3  border-b border-green-800 "
+                to="/audio-recordings"
+                onClick={() => setOpen(false)}
+              >
+                {t("nav_audio_recordings", lang)}
+              </Link>
             </div>
           )}
         </div>
