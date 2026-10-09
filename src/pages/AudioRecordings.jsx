@@ -377,7 +377,7 @@ const AudioRecordings = () => {
 
                         {recording.description && (
                           <p className="mt-3 text-sm text-gray-600">
-                            {recording.description}
+                            {recording.speaker}
                           </p>
                         )}
                       </div>
