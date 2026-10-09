@@ -31,7 +31,7 @@ const About = () => {
       <section className="max-w-6xl mx-auto px-4 py-16">
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <img
-            src="/pictures/slides/slide 2.png"
+            src="/logo.png"
             alt="Islamic education"
             className="w-full h-80 object-cover rounded-xl shadow-xl"
           />
