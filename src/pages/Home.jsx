@@ -12,6 +12,9 @@ import { Link } from "react-router-dom";
 const Home = () => {
   const { lang } = useContext(LanguageContext);
   const API_URL = import.meta.env.VITE_API_URL;
+  const [latestAnnouncement, setLatestAnnouncement] = useState(null);
+  const [announcementImage, setAnnouncementImage] = useState(null);
+  const [loadingAnnouncement, setLoadingAnnouncement] = useState(true);
 
   const [masjidPrograms, setMasjidPrograms] = useState([]);
   const [madrasaPrograms, setMadrasaPrograms] = useState([]);
@@ -45,6 +48,50 @@ const Home = () => {
 
     fetchPrograms();
   }, [lang]);
+
+  useEffect(() => {
+    const fetchLatestAnnouncement = async () => {
+      try {
+        setLoadingAnnouncement(true);
+
+        const [announcementResponse, imageResponse] = await Promise.all([
+          fetch(`${API_URL}/announcements?language=${lang}`),
+          fetch(`${API_URL}/images`),
+        ]);
+
+        if (!announcementResponse.ok || !imageResponse.ok) {
+          throw new Error("Failed to fetch announcements");
+        }
+
+        const [announcementData, imageData] = await Promise.all([
+          announcementResponse.json(),
+          imageResponse.json(),
+        ]);
+
+        const sortedAnnouncements = [...announcementData].sort(
+          (a, b) => new Date(b.created_at || 0) - new Date(a.created_at || 0),
+        );
+
+        const latest = sortedAnnouncements[0] || null;
+
+        setLatestAnnouncement(latest);
+
+        setAnnouncementImage(
+          latest
+            ? imageData.find((image) => image.id === latest.image_id) || null
+            : null,
+        );
+      } catch (error) {
+        console.error("Error fetching latest announcement:", error);
+      } finally {
+        setLoadingAnnouncement(false);
+      }
+    };
+
+    fetchLatestAnnouncement();
+  }, [API_URL, lang]);
+
+
   return (
     <>
       <main className=" text-green-800">
@@ -122,6 +169,59 @@ const Home = () => {
             </SwiperSlide>
           </Swiper>
         </div>
+        
+        {!loadingAnnouncement && latestAnnouncement && (
+          <section
+            dir={lang === "ar" ? "rtl" : "ltr"}
+            className="mx-auto my-12 max-w-6xl px-4"
+          >
+            <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-lg">
+              <div className="border-b border-gray-200 bg-green-800 px-6 py-4 text-white">
+                <h2 className="text-2xl font-bold">
+                  {lang === "ar"
+                    ? "آخر الإعلانات"
+                    : lang === "sw"
+                      ? "Tangazo la Hivi Karibuni"
+                      : "Latest Announcement"}
+                </h2>
+              </div>
+
+              <div className="grid md:grid-cols-2">
+                {announcementImage?.url && (
+                  <img
+                    src={announcementImage.url}
+                    alt={latestAnnouncement.title}
+                    className="h-64 w-full object-cover md:h-full md:min-h-72"
+                    loading="lazy"
+                  />
+                )}
+
+                <div className="flex flex-col items-start justify-center p-6 md:p-8">
+                  <h3 className="text-2xl font-bold text-gray-900">
+                    {latestAnnouncement.title}
+                  </h3>
+
+                  <p className="mt-4 whitespace-pre-line leading-7 text-gray-700">
+                    {latestAnnouncement.content.length > 250
+                      ? `${latestAnnouncement.content.slice(0, 250).trim()}…`
+                      : latestAnnouncement.content}
+                  </p>
+
+                  <Link
+                    to="/announcements"
+                    className="mt-6 inline-block rounded-lg bg-green-800 px-6 py-3 font-semibold text-white transition hover:bg-green-700"
+                  >
+                    {lang === "ar"
+                      ? "عرض جميع الإعلانات"
+                      : lang === "sw"
+                        ? "Tazama Matangazo Yote"
+                        : "View All Announcements"}
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
 
         <div className="max-w-6xl mx-auto px-4 py-16">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">

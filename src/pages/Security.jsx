@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import React from "react";
 import { useState, useEffect, useContext } from "react";
 import { MdLanguage } from "react-icons/md";
@@ -24,35 +24,63 @@ const SecurityPage = () => {
   const [showSignup, setShowSignup] = useState(false);
 
   const [user, setUser] = useState(null);
+  const navigate = useNavigate();
+
+const handleLogout = () => {
+  localStorage.removeItem("access_token");
+  localStorage.removeItem("user");
+
+  setUser(null);
+  setIsDropdownOpen(false);
+  setShowLogin(false);
+  setShowSignup(false);
+  
+  alert("Logged out successfully!");
+  
+  navigate("/");
+};
 
   useEffect(() => {
     localStorage.setItem("lang", lang);
   }, [lang]);
 
-  useEffect(() => {
-    const fetchUser = async () => {
-      const token = localStorage.getItem("access_token");
+useEffect(() => {
+  const fetchUser = async () => {
+    const token = localStorage.getItem("access_token");
 
-      if (!token) return;
+    if (!token) {
+      setUser(null);
+      return;
+    }
 
-      try {
-        const res = await fetch(`${API_URL}/me`, {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        });
+    try {
+      const res = await fetch(`${API_URL}/me`, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
 
-        if (!res.ok) throw new Error("Failed to fetch user");
-
-        const data = await res.json();
-        setUser(data.user || data);
-      } catch (err) {
-        console.log(err);
+      if (!res.ok) {
+        if (res.status === 401) {
+          localStorage.removeItem("access_token");
+          localStorage.removeItem("user");
+          setUser(null);
+        }
+        return;
       }
-    };
 
-    fetchUser();
-  }, []);
+      const data = await res.json();
+      const currentUser = data.user || data;
+
+      setUser(currentUser);
+      localStorage.setItem("user", JSON.stringify(currentUser));
+    } catch (err) {
+      console.error("Error fetching user:", err);
+    }
+  };
+
+  fetchUser();
+}, []);
 
   return (
     <>
@@ -151,25 +179,36 @@ const SecurityPage = () => {
 
               {isDropdownOpen && (
                 <div className="absolute right-0 top-full mt-2 w-40 overflow-hidden rounded-md border border-green-800 bg-white shadow-lg z-50">
-                  <button
-                    className="block w-full px-4 py-3 text-left text-sm hover:bg-green-50 transition-colors"
-                    onClick={() => {
-                      setShowLogin(true);
-                      setIsDropdownOpen(false);
-                    }}
-                  >
-                    Login
-                  </button>
+                  {user ? (
+                    <button
+                      className="block w-full px-4 py-3 text-left text-sm hover:bg-green-50"
+                      onClick={handleLogout}
+                    >
+                      Log Out
+                    </button>
+                  ) : (
+                    <>
+                      <button
+                        className="block w-full px-4 py-3 text-left text-sm hover:bg-green-50"
+                        onClick={() => {
+                          setShowLogin(true);
+                          setIsDropdownOpen(false);
+                        }}
+                      >
+                        Login
+                      </button>
 
-                  <button
-                    className="block w-full border-t border-green-100 px-4 py-3 text-left text-sm hover:bg-green-50 transition-colors"
-                    onClick={() => {
-                      setShowSignup(true);
-                      setIsDropdownOpen(false);
-                    }}
-                  >
-                    Signup
-                  </button>
+                      <button
+                        className="block w-full border-t border-green-100 px-4 py-3 text-left text-sm hover:bg-green-50"
+                        onClick={() => {
+                          setShowSignup(true);
+                          setIsDropdownOpen(false);
+                        }}
+                      >
+                        Signup
+                      </button>
+                    </>
+                  )}
                 </div>
               )}
             </div>
@@ -189,25 +228,36 @@ const SecurityPage = () => {
 
               {isDropdownOpen && (
                 <div className="absolute right-0 top-full mt-2 w-40 overflow-hidden rounded-md border border-green-800 bg-white shadow-lg z-50">
-                  <button
-                    className="block w-full px-4 py-3 text-left text-sm hover:bg-green-50 transition-colors"
-                    onClick={() => {
-                      setShowLogin(true);
-                      setIsDropdownOpen(false);
-                    }}
-                  >
-                    Login
-                  </button>
+                  {user ? (
+                    <button
+                      className="block w-full px-4 py-3 text-left text-sm hover:bg-green-50"
+                      onClick={handleLogout}
+                    >
+                      Log Out
+                    </button>
+                  ) : (
+                    <>
+                      <button
+                        className="block w-full px-4 py-3 text-left text-sm hover:bg-green-50"
+                        onClick={() => {
+                          setShowLogin(true);
+                          setIsDropdownOpen(false);
+                        }}
+                      >
+                        Login
+                      </button>
 
-                  <button
-                    className="block w-full border-t border-green-100 px-4 py-3 text-left text-sm hover:bg-green-50 transition-colors"
-                    onClick={() => {
-                      setShowSignup(true);
-                      setIsDropdownOpen(false);
-                    }}
-                  >
-                    Signup
-                  </button>
+                      <button
+                        className="block w-full border-t border-green-100 px-4 py-3 text-left text-sm hover:bg-green-50"
+                        onClick={() => {
+                          setShowSignup(true);
+                          setIsDropdownOpen(false);
+                        }}
+                      >
+                        Signup
+                      </button>
+                    </>
+                  )}
                 </div>
               )}
             </div>
@@ -262,8 +312,12 @@ const SecurityPage = () => {
       </div>
 
       {/* Login Modal */}
-      {showLogin && <LoginModal onClose={() => setShowLogin(false)} />}
-
+      {showLogin && (
+        <LoginModal
+          onClose={() => setShowLogin(false)}
+          onLoginSuccess={(loggedInUser) => setUser(loggedInUser)}
+        />
+      )}
       {/* Signup Modal */}
       {showSignup && <SignUpModal onClose={() => setShowSignup(false)} />}
 

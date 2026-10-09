@@ -55,6 +55,12 @@ const NavBar = () => {
                   {t("nav_admissions", lang)}
                 </Link>
               </div>
+
+              <div>
+                <Link className="navbar-brand " to="/announcements">
+                  {t("nav_announcements", lang)}
+                </Link>
+              </div>
             </div>
             {/* language selector  */}
             <button
@@ -141,6 +147,13 @@ const NavBar = () => {
                 onClick={() => setOpen(false)}
               >
                 {t("nav_audio_recordings", lang)}
+              </Link>
+              <Link
+                className="block px-6 py-3  border-b border-green-800 "
+                to="/announcements"
+                onClick={() => setOpen(false)}
+              >
+                {t("nav_announcements", lang)}
               </Link>
             </div>
           )}

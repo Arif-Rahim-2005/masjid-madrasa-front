@@ -34,6 +34,11 @@
     "sw": "Rekodi za Sauti",
     "ar": "التسجيلات الصوتية"
   },
+  "nav_announcements":{
+    "en": "Announcements",
+    "sw": "Matangazo",
+    "ar":"الإعلانات"
+  },
   "nav_login": {
     "en": "Login",
     "sw": "Ingia",

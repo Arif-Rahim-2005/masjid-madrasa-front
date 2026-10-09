@@ -12,6 +12,7 @@ import Admissions from "./pages/Admissions";
 import SecurityPage from "./pages/Security";
 import AdminPanel from "./pages/AdminPanel";
 import AudioRecordings from "./pages/AudioRecordings";
+import Announcements from "./pages/Announcements";
 
 const Layout = () => {
   const location = useLocation();
@@ -31,6 +32,7 @@ const Layout = () => {
         <Route path="/admin" element={<SecurityPage />} />
         <Route path="/admin-panel" element={<AdminPanel />} />
         <Route path="/audio-recordings" element={<AudioRecordings />} />
+        <Route path="/announcements" element={<Announcements />} />
       </Routes>
 
       {!isAdminPage && <Footer />}

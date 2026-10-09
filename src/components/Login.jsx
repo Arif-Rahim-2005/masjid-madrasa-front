@@ -4,7 +4,7 @@ import SignUpModal from "./SignUp";
 
 const API_URL = import.meta.env.VITE_API_URL;
 
-const LoginModal = ({ onClose }) => {
+const LoginModal = ({ onClose, onLoginSuccess }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
@@ -43,10 +43,12 @@ const LoginModal = ({ onClose }) => {
         localStorage.setItem("user", JSON.stringify(data.user));
       }
 
-      alert("Logged in successfully!");
+      // Notify the navbar that login succeeded
+      if (onLoginSuccess) {
+        onLoginSuccess(data.user || null);
+      }
 
-      // Close the modal.
-      // We will later replace this with AuthContext state.
+      alert("Logged in successfully!");
       onClose();
     } catch (error) {
       console.error("Login error:", error);
